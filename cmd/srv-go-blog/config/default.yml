@@ -1,2 +1,7 @@
 srv-go-blog__HttpServer_Addr: ""
 srv-go-blog__HttpServer_Port: 80
+srv-go-blog__MasterDB_DbName: ""
+srv-go-blog__MasterDB_Host: 127.0.0.1
+srv-go-blog__MasterDB_Password: ""
+srv-go-blog__MasterDB_Port: 3306
+srv-go-blog__MasterDB_User: ""

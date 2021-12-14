@@ -4,6 +4,7 @@ go 1.16
 
 require (
 	github.com/gin-gonic/gin v1.7.7
+	github.com/go-jarvis/confgorm v0.1.0
 	github.com/go-jarvis/confhttp v0.0.0-20211213092450-d433c3e6150b
 	github.com/go-jarvis/jarvis v0.4.3
 	github.com/go-jarvis/rum-gonic v0.4.0
@@ -15,4 +16,5 @@ require (
 	golang.org/x/sys v0.0.0-20211213223007-03aa0b5f6827 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
+	gorm.io/gorm v1.21.12
 )

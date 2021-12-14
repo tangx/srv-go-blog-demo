@@ -7,7 +7,7 @@ import (
 
 var (
 	RouterGroup_Root = rum.NewRouterGroup("/")
-	RouterGroup_V0   = rum.NewRouterGroup("/0")
+	RouterGroup_V0   = rum.NewRouterGroup("/v0")
 )
 
 func init() {
