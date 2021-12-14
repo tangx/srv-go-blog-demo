@@ -99,8 +99,9 @@ github.com/go-jarvis/jarvis v0.4.3 h1:roJoYS/HORVh6/BobdH+vbsfbJNkueseIqIoCmVf3U
 github.com/go-jarvis/jarvis v0.4.3/go.mod h1:rn6lk4Fgtnu6diAyYKOQDDwJ5upF23nkcwUNLUJEdjY=
 github.com/go-jarvis/rum-gonic v0.4.3 h1:s2i3Mhdj/aPo3psNDLwAak5fX5alz8W6lt6wvqXJaUc=
 github.com/go-jarvis/rum-gonic v0.4.3/go.mod h1:3mElUDMZ/j2IYV+R7+dqE6eyv0uw3nKOl1oU0hz8GfU=
-github.com/go-jarvis/statuserrors v0.1.1 h1:s3khXiCsE8WThPYlSxwIDFfE124d3LUyvv86Ii5y+kE=
 github.com/go-jarvis/statuserrors v0.1.1/go.mod h1:JK2zONxZblj4TfnsZUtu7FPDXtxOF//mI1phrytdUwk=
+github.com/go-jarvis/statuserrors v0.1.3 h1:7Rnh9OfFQbsCefIu27yU9ZHqv6hR9L6Lhl9BCJrxBQ4=
+github.com/go-jarvis/statuserrors v0.1.3/go.mod h1:JK2zONxZblj4TfnsZUtu7FPDXtxOF//mI1phrytdUwk=
 github.com/go-kit/kit v0.8.0/go.mod h1:xBxKIO96dXMWWy0MnWVtmwkA9/13aqxPnvrjFYMA2as=
 github.com/go-logfmt/logfmt v0.3.0/go.mod h1:Qt1PoO58o5twSAckw1HlFXLmHsOX5/0LbT9GBnD5lWE=
 github.com/go-logfmt/logfmt v0.4.0/go.mod h1:3RMwSq7FuexP4Kalkev3ejPJsZTpXXBr9+V4qmtdjCk=

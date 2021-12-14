@@ -7,6 +7,7 @@ require (
 	github.com/go-jarvis/confgorm v0.1.0
 	github.com/go-jarvis/jarvis v0.4.3
 	github.com/go-jarvis/rum-gonic v0.4.3
+	github.com/go-jarvis/statuserrors v0.1.3
 	github.com/goccy/go-json v0.8.1 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect

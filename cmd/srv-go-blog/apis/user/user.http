@@ -8,9 +8,6 @@ Content-Type: application/json
 }
 
 
-### name
-GET http://127.0.0.1:8099/v0/index
 
-
-### post 
-POST http://127.0.0.1:8099/v0/user?name=zhangsan&password=zhangdan1123
+####
+GET http://127.0.0.1:8099/v0/user/3
