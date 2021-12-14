@@ -95,13 +95,10 @@ github.com/go-gl/glfw/v3.3/glfw v0.0.0-20200222043503-6f7a984d4dc4/go.mod h1:tQ2
 github.com/go-jarvis/cobrautils v1.2.0/go.mod h1:gFNoz8Y38vhQuC10boy+TNjh3Houw1hpbfxN83cciDQ=
 github.com/go-jarvis/confgorm v0.1.0 h1:4W0GO2HbxNKQ0zCSZfFoYFwd80XXqgzSnV7P7MRi8lk=
 github.com/go-jarvis/confgorm v0.1.0/go.mod h1:q8F96TQM9i8R1tbxWDn56xf0AAY9OMTD5o4+Zdt/UP8=
-github.com/go-jarvis/confhttp v0.0.0-20211213092450-d433c3e6150b h1:zk8qJR0FA89fCYA/7nXN5EbIvtlpkRDqD+mvFJ2RZkk=
-github.com/go-jarvis/confhttp v0.0.0-20211213092450-d433c3e6150b/go.mod h1:H+nTwDfU9275omQXDmxE0bYUqVM79FsH2U6U+bGwXSI=
 github.com/go-jarvis/jarvis v0.4.3 h1:roJoYS/HORVh6/BobdH+vbsfbJNkueseIqIoCmVf3UA=
 github.com/go-jarvis/jarvis v0.4.3/go.mod h1:rn6lk4Fgtnu6diAyYKOQDDwJ5upF23nkcwUNLUJEdjY=
-github.com/go-jarvis/rum-gonic v0.4.0/go.mod h1:3mElUDMZ/j2IYV+R7+dqE6eyv0uw3nKOl1oU0hz8GfU=
-github.com/go-jarvis/rum-gonic v0.4.2 h1:tmiWIKCFlttQdISBJwyhnr4V/R8F8XyYlARUJjhNuqc=
-github.com/go-jarvis/rum-gonic v0.4.2/go.mod h1:3mElUDMZ/j2IYV+R7+dqE6eyv0uw3nKOl1oU0hz8GfU=
+github.com/go-jarvis/rum-gonic v0.4.3 h1:s2i3Mhdj/aPo3psNDLwAak5fX5alz8W6lt6wvqXJaUc=
+github.com/go-jarvis/rum-gonic v0.4.3/go.mod h1:3mElUDMZ/j2IYV+R7+dqE6eyv0uw3nKOl1oU0hz8GfU=
 github.com/go-jarvis/statuserrors v0.1.1 h1:s3khXiCsE8WThPYlSxwIDFfE124d3LUyvv86Ii5y+kE=
 github.com/go-jarvis/statuserrors v0.1.1/go.mod h1:JK2zONxZblj4TfnsZUtu7FPDXtxOF//mI1phrytdUwk=
 github.com/go-kit/kit v0.8.0/go.mod h1:xBxKIO96dXMWWy0MnWVtmwkA9/13aqxPnvrjFYMA2as=

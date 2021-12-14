@@ -3,9 +3,9 @@ package global
 import (
 	"github.com/go-jarvis/confgorm/drivers"
 	"github.com/go-jarvis/confgorm/migration"
-	"github.com/go-jarvis/confhttp"
 	"github.com/go-jarvis/jarvis"
 	"github.com/go-jarvis/jarvis/pkg/appctx"
+	"github.com/go-jarvis/rum-gonic/confhttp"
 	"github.com/tangx/srv-go-blog/cmd/srv-go-blog/apis"
 	"github.com/tangx/srv-go-blog/pkg/injectors/db"
 	"github.com/tangx/srv-go-blog/pkg/models"

@@ -5,9 +5,8 @@ go 1.16
 require (
 	github.com/gin-gonic/gin v1.7.7
 	github.com/go-jarvis/confgorm v0.1.0
-	github.com/go-jarvis/confhttp v0.0.0-20211213092450-d433c3e6150b
 	github.com/go-jarvis/jarvis v0.4.3
-	github.com/go-jarvis/rum-gonic v0.4.2
+	github.com/go-jarvis/rum-gonic v0.4.3
 	github.com/goccy/go-json v0.8.1 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
