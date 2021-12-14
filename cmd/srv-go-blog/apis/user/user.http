@@ -1,0 +1,16 @@
+####
+POST http://127.0.0.1:8099/v0/user
+Content-Type: application/json
+
+{
+  "name": "wangwu123",
+  "password": "wangwu123123"
+}
+
+
+### name
+GET http://127.0.0.1:8099/v0/index
+
+
+### post 
+POST http://127.0.0.1:8099/v0/user?name=zhangsan&password=zhangdan1123

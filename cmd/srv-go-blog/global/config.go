@@ -7,6 +7,7 @@ import (
 	"github.com/go-jarvis/jarvis"
 	"github.com/go-jarvis/jarvis/pkg/appctx"
 	"github.com/tangx/srv-go-blog/cmd/srv-go-blog/apis"
+	"github.com/tangx/srv-go-blog/pkg/injectors/db"
 	"github.com/tangx/srv-go-blog/pkg/models"
 )
 
@@ -37,6 +38,10 @@ func init() {
 }
 
 func Server() *confhttp.Server {
+
+	httpServer.WithContextInjectors(
+		db.InjectDBInto(masterDB),
+	)
 
 	httpServer.Register(apis.RouterGroup_Root)
 	return httpServer
