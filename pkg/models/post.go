@@ -8,7 +8,7 @@ type Post struct {
 	Title        string `gorm:"type:varchar(128);index"`
 	Content      string `gorm:"longtext"`
 	ReadingCount int    `gorm:"uint"`
-	AuthorID     int    `gorm:"bigint"`
+	AuthorID     uint   `gorm:"bigint"`
 	Author       Author `gorm:"foreignKey:AuthorID"`
 }
 
