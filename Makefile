@@ -8,7 +8,7 @@ OPENAPI=tools openapi
 
 Workdir ?= ./cmd/srv-go-blog
 
-up: tidy dockerize
+up: tidy dockerize migrate
 	cd $(Workdir) && go run .
 
 tidy:
