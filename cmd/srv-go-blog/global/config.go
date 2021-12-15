@@ -1,7 +1,7 @@
 package global
 
 import (
-	"github.com/go-jarvis/confgorm/drivers"
+	"github.com/go-jarvis/confgorm/drivers/mysqldriver"
 	"github.com/go-jarvis/confgorm/migration"
 	"github.com/go-jarvis/jarvis"
 	"github.com/go-jarvis/jarvis/pkg/appctx"
@@ -13,7 +13,7 @@ import (
 
 var (
 	httpServer = &confhttp.Server{}
-	masterDB   = &drivers.MysqlDriver{
+	masterDB   = &mysqldriver.Server{
 		MigrationDB: models.DB,
 	}
 )
@@ -28,7 +28,7 @@ var (
 func init() {
 	config := &struct {
 		HttpServer *confhttp.Server
-		MasterDB   *drivers.MysqlDriver
+		MasterDB   *mysqldriver.Server
 	}{
 		HttpServer: httpServer,
 		MasterDB:   masterDB,
@@ -40,7 +40,7 @@ func init() {
 func Server() *confhttp.Server {
 
 	httpServer.WithContextInjectors(
-		db.InjectDBInto(masterDB),
+		db.InjectDBInto(masterDB.GormDB()),
 	)
 
 	httpServer.Register(apis.RouterGroup_Root)
@@ -48,5 +48,9 @@ func Server() *confhttp.Server {
 }
 
 func AutoMigrate() {
-	migration.Magrate(masterDB)
+	err := migration.Magrate(masterDB)
+	if err != nil {
+		panic(err)
+	}
+
 }

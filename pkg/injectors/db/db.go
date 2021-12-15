@@ -3,9 +3,7 @@ package db
 import (
 	"context"
 
-	"github.com/go-jarvis/confgorm/drivers/mysql"
-
-	"github.com/go-jarvis/confgorm/drivers"
+	"gorm.io/gorm"
 
 	"github.com/go-jarvis/rum-gonic/rum"
 )
@@ -16,11 +14,11 @@ const (
 	KEY_MasterDB Database = "KEY_MasterDB"
 )
 
-func InjectDBInto(driver *drivers.MysqlDriver) rum.ContextInjectorFunc {
-	return rum.InjectContextValueWith(KEY_MasterDB, driver)
+func InjectDBInto(db *gorm.DB) rum.ContextInjectorFunc {
+	return rum.InjectContextValueWith(KEY_MasterDB, db)
 }
 
-func FromInjectedContext(ctx context.Context) *mysql.MysqlDriver {
+func FromInjectedContext(ctx context.Context) *gorm.DB {
 	obj := rum.InjectedContextValueFrom(ctx, KEY_MasterDB)
-	return obj.(*mysql.MysqlDriver)
+	return obj.(*gorm.DB)
 }

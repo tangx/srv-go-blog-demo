@@ -93,8 +93,8 @@ github.com/go-gl/glfw v0.0.0-20190409004039-e6da0acd62b1/go.mod h1:vR7hzQXu2zJy9
 github.com/go-gl/glfw/v3.3/glfw v0.0.0-20191125211704-12ad95a8df72/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=
 github.com/go-gl/glfw/v3.3/glfw v0.0.0-20200222043503-6f7a984d4dc4/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=
 github.com/go-jarvis/cobrautils v1.2.0/go.mod h1:gFNoz8Y38vhQuC10boy+TNjh3Houw1hpbfxN83cciDQ=
-github.com/go-jarvis/confgorm v0.1.0 h1:4W0GO2HbxNKQ0zCSZfFoYFwd80XXqgzSnV7P7MRi8lk=
-github.com/go-jarvis/confgorm v0.1.0/go.mod h1:q8F96TQM9i8R1tbxWDn56xf0AAY9OMTD5o4+Zdt/UP8=
+github.com/go-jarvis/confgorm v0.2.0 h1:ITQZUkEHi87c7KqjjGBwXUXymVJUNpi/bUX75hpZjCs=
+github.com/go-jarvis/confgorm v0.2.0/go.mod h1:pm23mEy8sFrwdeHlDMFs82P11Rz3OoLjgjtfu6MkU78=
 github.com/go-jarvis/jarvis v0.4.3 h1:roJoYS/HORVh6/BobdH+vbsfbJNkueseIqIoCmVf3UA=
 github.com/go-jarvis/jarvis v0.4.3/go.mod h1:rn6lk4Fgtnu6diAyYKOQDDwJ5upF23nkcwUNLUJEdjY=
 github.com/go-jarvis/rum-gonic v0.4.3 h1:s2i3Mhdj/aPo3psNDLwAak5fX5alz8W6lt6wvqXJaUc=
@@ -287,7 +287,6 @@ github.com/onsi/ginkgo v1.12.1/go.mod h1:zj2OWP4+oCPe1qIXoGWkgMRwljMUYCdkwsT2108
 github.com/onsi/ginkgo v1.16.4/go.mod h1:dX+/inL/fNMqNlz0e9LfyB9TswhZpCVdJM/Z6Vvnwo0=
 github.com/onsi/gomega v1.7.1/go.mod h1:XdKZgCCFLUoM/7CFJVPcG8C1xQ1AJ0vpAezJrB7JYyY=
 github.com/onsi/gomega v1.10.1/go.mod h1:iN09h71vgCQne3DLsj+A5owkum+a2tYe+TOCB1ybHNo=
-github.com/onsi/gomega v1.14.0/go.mod h1:cIuvLEne0aoVhAgh/O6ac0Op8WWw9H6eYCriF+tEHG0=
 github.com/onsi/gomega v1.17.0 h1:9Luw4uT5HTjHTN8+aNcSThgH1vdXnmdJ8xIfZ4wyTRE=
 github.com/onsi/gomega v1.17.0/go.mod h1:HnhC7FXeEQY45zxNK3PPoIUhzk/80Xly9PcubAlGdZY=
 github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=

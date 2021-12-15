@@ -5,9 +5,10 @@ import "gorm.io/gorm"
 type Post struct {
 	gorm.Model
 
-	Title    string
-	Content  string
-	AuthorID int
+	Title    string `gorm:"type:varchar(128);index"`
+	Content  string `gorm:"longtext"`
+	AuthorID int    `gorm:"bigint"`
+	Author   Author `gorm:"foreignKey:AuthorID"`
 }
 
 func init() {

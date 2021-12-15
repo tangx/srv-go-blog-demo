@@ -5,8 +5,8 @@ import "gorm.io/gorm"
 type Author struct {
 	gorm.Model
 
-	Name     string
-	Password string
+	Name     string `gorm:"index;type:varchar(32);comment:用户昵称"`
+	Password string `gorm:"type:varchar(32);comment:用户密码"`
 }
 
 func init() {

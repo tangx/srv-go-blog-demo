@@ -4,7 +4,7 @@ go 1.16
 
 require (
 	github.com/gin-gonic/gin v1.7.7
-	github.com/go-jarvis/confgorm v0.1.0
+	github.com/go-jarvis/confgorm v0.2.0
 	github.com/go-jarvis/jarvis v0.4.3
 	github.com/go-jarvis/rum-gonic v0.4.3
 	github.com/go-jarvis/statuserrors v0.1.3
