@@ -5,6 +5,7 @@ import (
 	"github.com/tangx/srv-go-blog/cmd/srv-go-blog/apis/index"
 	"github.com/tangx/srv-go-blog/cmd/srv-go-blog/apis/post"
 	"github.com/tangx/srv-go-blog/cmd/srv-go-blog/apis/user"
+	"github.com/tangx/srv-go-blog/cmd/srv-go-blog/apis/vote"
 )
 
 var (
@@ -20,6 +21,8 @@ func init() {
 		RouterGroup_V0.Register(user.RouterGroup_User)
 
 		RouterGroup_V0.Register(post.RouterGroupPost)
+
+		RouterGroup_V0.Register(vote.RouterGroupVote)
 	}
 
 }

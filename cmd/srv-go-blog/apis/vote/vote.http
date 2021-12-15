@@ -1,0 +1,11 @@
+
+
+
+### Post Vote
+POST http://127.0.0.1:8099/v0/vote/post/1
+Content-Type: application/json
+AuthorName: wangwu123
+
+{
+    "status":"dislike"
+}
