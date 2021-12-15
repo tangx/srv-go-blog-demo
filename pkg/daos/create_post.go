@@ -13,8 +13,10 @@ func CreatePost(ctx context.Context, title, content string, authorID uint) (*mod
 	d := db.FromInjectedContext(ctx)
 
 	post := &models.Post{
-		Title:    title,
-		Content:  content,
+		PostInfo: models.PostInfo{
+			Title:   title,
+			Content: content,
+		},
 		AuthorID: authorID,
 	}
 

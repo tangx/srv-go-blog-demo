@@ -11,7 +11,7 @@ func init() {
 }
 
 type GetPostByID struct {
-	httpx.MethodGet `path:"/:id"`
+	httpx.MethodGet `path:"/id/:id"`
 	ID              uint `uri:"id"`
 }
 

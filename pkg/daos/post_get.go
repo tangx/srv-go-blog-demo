@@ -10,7 +10,7 @@ import (
 	"gorm.io/gorm"
 )
 
-func GetPostByID(ctx context.Context, id uint) (*models.Post, error) {
+func GetPostByID(ctx context.Context, id uint) (*models.PostInfo, error) {
 	d := db.FromInjectedContext(ctx)
 
 	post := &models.Post{}
@@ -27,5 +27,5 @@ func GetPostByID(ctx context.Context, id uint) (*models.Post, error) {
 
 	go IncreasePostReadingCount(ctx, id)
 
-	return post, nil
+	return &post.PostInfo, nil
 }

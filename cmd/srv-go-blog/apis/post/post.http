@@ -11,5 +11,5 @@ AuthorName: wangwu123
 
 
 ### read post
-GET http://127.0.0.1:8099/v0/post/1
+GET http://127.0.0.1:8099/v0/post/id/1
 Content-Type: application/json
