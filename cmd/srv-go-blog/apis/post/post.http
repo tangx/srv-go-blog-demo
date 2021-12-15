@@ -8,3 +8,8 @@ AuthorName: wangwu123
     "title": "这是我的第一篇 blog",
     "content":"大家好， 这是我的第一篇 blog"
 }
+
+
+### read post
+GET http://127.0.0.1:8099/v0/post/1
+Content-Type: application/json
