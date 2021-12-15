@@ -9,5 +9,9 @@ Content-Type: application/json
 
 
 
-####
-GET http://127.0.0.1:8099/v0/user/1
+#### Get user by id
+GET http://127.0.0.1:8099/v0/user/id/1
+
+
+#### Get user by id
+GET http://127.0.0.1:8099/v0/user/name/wangwu123

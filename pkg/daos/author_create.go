@@ -20,5 +20,5 @@ func CreateAuthor(ctx context.Context, name, password string) (*models.Author, e
 		return nil, tx.Error
 	}
 
-	return user, nil
+	return user.Desensitization(), nil
 }

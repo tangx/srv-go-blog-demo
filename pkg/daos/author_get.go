@@ -28,7 +28,8 @@ func GetUserByID(ctx context.Context, id int) (*models.Author, error) {
 		)
 	}
 
-	return user, nil
+	return user.Desensitization(), nil
+
 }
 
 func GetUserByName(ctx context.Context, name string) (*models.Author, error) {
@@ -44,5 +45,5 @@ func GetUserByName(ctx context.Context, name string) (*models.Author, error) {
 		return nil, t.Error
 	}
 
-	return user, nil
+	return user.Desensitization(), nil
 }

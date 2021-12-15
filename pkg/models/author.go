@@ -12,3 +12,12 @@ type Author struct {
 func init() {
 	DB.AddTable(&Author{})
 }
+
+// desensitization 脱敏
+func (author *Author) Desensitization() *Author {
+	cc := &Author{
+		Model: author.Model,
+		Name:  author.Name,
+	}
+	return cc
+}
