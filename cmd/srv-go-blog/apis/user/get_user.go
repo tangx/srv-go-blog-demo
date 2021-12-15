@@ -31,6 +31,10 @@ type GetUserByName struct {
 }
 
 func (index *GetUserByName) Output(c *gin.Context) (interface{}, error) {
+	author, err := daos.GetUserByName(c, index.Name)
+	if err != nil {
+		return nil, err
+	}
 
-	return nil, nil
+	return author, nil
 }
