@@ -11,7 +11,7 @@ func init() {
 }
 
 type GetUserByID struct {
-	httpx.MethodGet `path:"/:id"`
+	httpx.MethodGet `path:"/id/:id"`
 	ID              int `uri:"id"`
 }
 
@@ -23,4 +23,14 @@ func (u *GetUserByID) Output(c *gin.Context) (interface{}, error) {
 	}
 	return author, nil
 
+}
+
+type GetUserByName struct {
+	httpx.MethodGet `path:"/name/:name"`
+	Name            string `uri:"name"`
+}
+
+func (index *GetUserByName) Output(c *gin.Context) (interface{}, error) {
+
+	return nil, nil
 }

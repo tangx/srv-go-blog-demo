@@ -2,7 +2,7 @@ package daos
 
 import (
 	"context"
-	"fmt"
+	"net/http"
 
 	"github.com/go-jarvis/statuserrors"
 	"github.com/tangx/srv-go-blog/pkg/injectors/db"
@@ -17,7 +17,7 @@ func GetUserByID(ctx context.Context, id int) (*models.Author, error) {
 	t := d.First(user, id)
 
 	if statuserrors.Is(t.Error, gorm.ErrRecordNotFound) {
-		return nil, fmt.Errorf("user not found: %d", id)
+		return nil, statuserrors.Wrap(t.Error, http.StatusNotFound, "user not found: %d", id)
 	}
 
 	if t.Error != nil {
@@ -28,8 +28,21 @@ func GetUserByID(ctx context.Context, id int) (*models.Author, error) {
 		)
 	}
 
-	// fmt.Println("t.RowsAffected=", t.RowsAffected)
+	return user, nil
+}
+
+func GetUserByName(ctx context.Context, name string) (*models.Author, error) {
+	d := db.FromInjectedContext(ctx)
+
+	user := &models.Author{}
+	t := d.Where("name = ?", name).First(user)
+	if statuserrors.Is(t.Error, gorm.ErrRecordNotFound) {
+		return nil, statuserrors.Wrap(t.Error, http.StatusNotFound, "user not found: %s", name)
+	}
+
+	if t.Error != nil {
+		return nil, t.Error
+	}
 
 	return user, nil
-
 }
