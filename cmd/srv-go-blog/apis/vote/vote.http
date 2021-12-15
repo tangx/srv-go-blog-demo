@@ -9,3 +9,8 @@ AuthorName: wangwu123
 {
     "status":"dislike"
 }
+
+
+### Delete vote by id
+DELETE http://127.0.0.1:8099/v0/vote/id/1
+Content-Type: application/json

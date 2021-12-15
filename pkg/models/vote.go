@@ -15,7 +15,7 @@ type Vote struct {
 }
 
 type VoteInfo struct {
-	AuthorID  uint
-	PostID    uint
+	AuthorID  uint   `gorm:"index:cidx_author_post,priority:10"`
+	PostID    uint   `gorm:"index:cidx_author_post,priority:5"`
 	LikeOrNot string `gorm:"type:enum('like','dislike','nothing'); default:'nothing'"`
 }
